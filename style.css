@@ -1,0 +1,37 @@
+:root{
+    --darkest: #111827;
+    --light: #eee;
+    --green: limegreen;
+}
+
+body{
+background-color: var(--darkest);
+color: var(--light);
+
+}
+
+#gameContainner{
+
+   text-align: center;
+   
+}
+
+#gameBoard{
+    border: 2px solid;
+}
+
+#score{
+    font-family: cursive;
+    font-size: 100px;
+    font-weight: 300;
+}
+#reset{
+ font-family: cursive;
+ font-size: 20px;
+ width: 100px;
+ height: 50px;
+ border: 2px solid var(--green);
+ border-radius: 15px;
+ cursor: pointer;
+
+}
