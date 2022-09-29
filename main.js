@@ -34,7 +34,12 @@ function nextTick(){};
 
 function clearBoard(){};
 
-function createFood(){};
+function createFood(){
+    
+};
+function createBonus(){
+
+};
 
 function moveSnake(){};
 
