@@ -29,14 +29,23 @@ window.addEventListener("keydown", chnageDirection);
 resetBtn.addEventListener("click", reset);
 
 function startGame(){};
+
 function nextTick(){};
+
 function clearBoard(){};
+
 function createFood(){};
+
 function moveSnake(){};
+
 function drawSnake(){};
+
 function chnageDirection(){};
+
 function checkGameOver(){};
+
 function displayGameOver(){};
+
 function reset(){};
 
 
