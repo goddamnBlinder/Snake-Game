@@ -36,7 +36,8 @@ function moveSnake(){};
 function drawSnake(){};
 function chnageDirection(){};
 function checkGameOver(){};
-
+function displayGameOver(){};
+function reset(){};
 
 
 
