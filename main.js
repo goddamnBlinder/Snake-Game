@@ -4,16 +4,17 @@ const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector("#reset");
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
-
-const snakeColor = "azure"; 
+const gameColor = "white";
+const snakeColor = "lightgreen";
 const snakeBorder = "black";
-const foodColor = "crimson";
+const foodColor = "red";
 const unitSize = 25;
 let running = false;
 let xVelocity = unitSize;
 let yVelocity = 0; 
 let foodA;
 let foodB;
+let score = 0;
 
 // An object for Each body part of the snake
 let snake = [
@@ -28,6 +29,16 @@ let snake = [
 window.addEventListener("keydown", chnageDirection);
 resetBtn.addEventListener("click", reset);
 
+// The Invokes
+createFood();
+drawFood();
+
+
+
+
+
+
+
 function startGame(){};
 
 function nextTick(){};
@@ -36,10 +47,29 @@ function clearBoard(){};
 
 function createFood(){
     
-};
-function createBonus(){
+    function randomFood(min, max){
+     const randNum = Math.round((Math.random() * (max - min) + min ) / unitSize) * unitSize;
+     return randNum;
+    }
+    foodA = randomFood(0, gameWidth - unitSize);
+    foodB = randomFood(0, gameWidth - unitSize);
+    console.log(foodA);
+
 
 };
+
+
+function createBonus(){
+};
+
+function drawFood(){
+
+    ctx.fillstyle = foodColor;
+    ctx.fillRect(foodA, foodB, unitSize, unitSize);
+};
+
+
+function drawBonus(){};
 
 function moveSnake(){};
 

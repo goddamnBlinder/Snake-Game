@@ -1,23 +1,9 @@
-:root{
-    --darkest: #111827;
-    --light: #eee;
-    --green: limegreen;
-}
-
-body{
-background-color: var(--darkest);
-color: var(--light);
-
-}
-
 #gameContainner{
-
    text-align: center;
-   
 }
 
 #gameBoard{
-    border: 2px solid;
+    border: 3px solid;
 }
 
 #scoreText{
@@ -30,7 +16,7 @@ color: var(--light);
  font-size: 20px;
  width: 100px;
  height: 50px;
- border: 2px solid var(--green);
+ border: 2px solid ;
  border-radius: 15px;
  cursor: pointer;
 
