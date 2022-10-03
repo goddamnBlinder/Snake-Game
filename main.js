@@ -1,6 +1,5 @@
 const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
-gameBoard.stroke();
 const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector("#reset");
 const gameWidth = gameBoard.width;
@@ -8,7 +7,7 @@ const gameHeight = gameBoard.height;
 const gameColor = "white";
 const snakeColor = "lightgreen";
 const snakeBorder = "black";
-const foodColor = " ";
+const foodColor = "Red";
 const unitSize = 25;
 let running = false;
 let xVelocity = unitSize;
@@ -62,10 +61,11 @@ function createFood(){
 
 function createBonus(){
 };
+// const foodColor = foodColor.fillstyle = "red";
 
 function drawFood(){
-    ctx.fill()
-    ctx.fillstyle = foodColor;
+    
+    ctx.fillstyle = purple
     ctx.fillRect(foodX, foodY, unitSize, unitSize);
 };
 
