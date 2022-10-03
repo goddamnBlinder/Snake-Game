@@ -1,5 +1,6 @@
 const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
+gameBoard.stroke();
 const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector("#reset");
 const gameWidth = gameBoard.width;
@@ -12,8 +13,8 @@ const unitSize = 25;
 let running = false;
 let xVelocity = unitSize;
 let yVelocity = 0; 
-const foodX;
-const foodY;
+var foodX;
+var foodY;
 let score = 0;
 
 // An object for Each body part of the snake
@@ -63,9 +64,9 @@ function createBonus(){
 };
 
 function drawFood(){
-
+    ctx.fill()
     ctx.fillstyle = foodColor;
-    ctx.fillRect(foodA, foodB, unitSize, unitSize);
+    ctx.fillRect(foodX, foodY, unitSize, unitSize);
 };
 
 
