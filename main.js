@@ -7,7 +7,7 @@ const gameHeight = gameBoard.height;
 const gameColor = "white";
 const snakeColor = "lightgreen";
 const snakeBorder = "black";
-const foodColor = "Red";
+const foodColor = "red";
 const unitSize = 25;
 let running = false;
 let xVelocity = unitSize;
@@ -30,8 +30,7 @@ window.addEventListener("keydown", changeDirection);
 resetBtn.addEventListener("click", reset);
 
 // The Invokes
-createFood();
-drawFood();
+startGame();
 
 
 
@@ -39,7 +38,13 @@ drawFood();
 
 
 
-function startGame(){};
+function startGame(){
+   running = true;
+   scoreText.textContent = score;
+   createFood();
+   drawFood();
+   nextTick();
+};
 
 function nextTick(){};
 
