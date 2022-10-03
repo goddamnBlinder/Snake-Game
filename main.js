@@ -65,7 +65,7 @@ function createBonus(){
 
 function drawFood(){
     
-    ctx.fillstyle = purple
+    ctx.fillstyle = foodColor;
     ctx.fillRect(foodX, foodY, unitSize, unitSize);
 };
 
