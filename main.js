@@ -69,7 +69,10 @@ function nextTick(){
      }
 };
 
-function clearBoard(){};
+function clearBoard(){
+    ctx.fillstyle = gameColor;
+    ctx.fillRect(0, 0, gameWidth, gameHeight);
+};
 
 function createFood(){
     
@@ -100,7 +103,13 @@ function drawBonus(){};
 
 function moveSnake(){};
 
-function drawSnake(){};
+function drawSnake(){
+    ctx.fillstyle = snakeColor;
+    ctx.strokeStyle = snakeBorder;
+    snake.forEach(snakePart => {
+        ctx.fillRect(snakePart)
+    });
+};
 
 function changeDirection(){};
 
