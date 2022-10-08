@@ -1,10 +1,11 @@
+
 const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
 const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector("#reset");
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
-const gameColor = "white";
+const gameColor = "`Transparent";
 const snakeColor = "lightgreen";
 const snakeBorder = "black";
 const foodColor = "red";
